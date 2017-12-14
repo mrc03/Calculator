@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#263238"
+    android:orientation="vertical">
+
+
+    <EditText
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight=".2"
+        android:background="#ffffff"
+        android:cursorVisible="false"
+        android:gravity="fill_vertical|center|right"
+        android:inputType="text"
+        android:textIsSelectable="true"
+        android:textSize="56sp"
+        android:typeface="normal"
+        tools:ignore="LabelFor,RtlHardcoded,TextFields"></EditText>
+
+    <EditText
+        android:id="@+id/result_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight=".2"
+        android:background="#ffffff"
+        android:cursorVisible="false"
+        android:gravity="fill_vertical|center|right"
+        android:inputType="text"
+        android:textColor="#9e9e9e"
+        android:textIsSelectable="true"
+        android:textSize="40sp"
+        android:textStyle="italic"
+        tools:ignore="LabelFor,RtlHardcoded,TextFields"></EditText>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".8"
+        android:baselineAligned="true"
+        android:orientation="horizontal"
+        android:padding="0dp">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="0.8"
+            android:background="#263238"
+            android:padding="12dp"
+            tools:ignore="NestedWeights">
+
+
+            <Button
+                android:id="@+id/button_seven"
+                style="@style/ButtonStyle"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:background="?android:attr/selectableItemBackground"
+                android:text="@string/seven"
+                tools:ignore="RtlHardcoded" />
+
+            <Button
+                android:id="@+id/button_eight"
+                style="@style/ButtonStyle"
+                android:layout_toRightOf="@id/button_seven"
+
+                android:background="?android:attr/selectableItemBackground"
+                android:text="@string/eight"
+                tools:ignore="RtlHardcoded" />
+
+            <Button
+                android:id="@+id/button_nine"
+                style="@style/ButtonStyle"
+                android:layout_toRightOf="@id/button_eight"
+
+                android:background="?android:attr/selectableItemBackground"
+                android:text="@string/nine"
+                tools:ignore="RtlHardcoded" />
+
+            <Button
+                android:id="@+id/button_four"
+                style="@style/ButtonStyle"
+                android:layout_below="@id/button_seven"
+                android:background="?android:attr/selectableItemBackground"
+                android:text="@string/four"
+                tools:ignore="RtlHardcoded" />
+
+            <Button
+                android:id="@+id/button_five"
+                style="@style/ButtonStyle"
+                android:layout_below="@id/button_eight"
+                android:layout_toRightOf="@id/button_four"
+                android:background="?android:attr/selectableItemBackground"
+                android:text="@string/five"
+                tools:ignore="RtlHardcoded" />
+
+            <Button
+                android:id="@+id/button_six"
+                style="@style/ButtonStyle"
+                android:layout_below="@id/button_nine"
+                android:layout_toRightOf="@id/button_five"
+                android:background="?android:attr/selectableItemBackground"
+                android:text="@string/six"
+                tools:ignore="RtlHardcoded" />
+
+            <Button
+                android:id="@+id/button_one"
+                style="@style/ButtonStyle"
+                android:layout_below="@id/button_four"
+                android:background="?android:attr/selectableItemBackground"
+                android:text="@string/one"
+                tools:ignore="RtlHardcoded" />
+
+            <Button
+                android:id="@+id/button_two"
+                style="@style/ButtonStyle"
+                android:layout_below="@id/button_five"
+                android:layout_toRightOf="@id/button_one"
+                android:background="?android:attr/selectableItemBackground"
+                android:text="@string/two"
+                tools:ignore="RtlHardcoded" />
+
+            <Button
+                android:id="@+id/button_three"
+                style="@style/ButtonStyle"
+                android:layout_below="@id/button_six"
+                android:layout_toRightOf="@id/button_two"
+                android:background="?android:attr/selectableItemBackground"
+                android:text="@string/three"
+                tools:ignore="RtlHardcoded" />
+
+            <Button
+                android:id="@+id/button_decimal"
+                style="@style/ButtonStyle"
+                android:layout_below="@id/button_one"
+                android:layout_marginBottom="0dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:text="@string/decimal"
+                tools:ignore="RtlHardcoded" />
+
+            <Button
+                android:id="@+id/button_zero"
+                style="@style/ButtonStyle"
+                android:layout_below="@id/button_two"
+                android:layout_marginBottom="0dp"
+                android:layout_toRightOf="@id/button_decimal"
+                android:background="?android:attr/selectableItemBackground"
+                android:text="@string/zero"
+                tools:ignore="RtlHardcoded" />
+
+            <Button
+                android:id="@+id/button_equal"
+                style="@style/ButtonStyle"
+                android:layout_below="@id/button_three"
+                android:layout_marginBottom="0dp"
+                android:layout_toRightOf="@id/button_zero"
+                android:background="?android:attr/selectableItemBackground"
+                android:text="@string/equal"
+                tools:ignore="RtlHardcoded" />
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25"
+            android:background="#9E9E9E"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/button_clear"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="0dp"
+                android:layout_weight="1"
+                android:background="#757575"
+                android:text="@string/clear"
+                android:textColor="#ffffff"
+                android:textSize="40sp"
+                tools:ignore="RtlHardcoded" />
+
+            <Button
+                android:id="@+id/button_add"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_weight="1"
+                android:background="#757575"
+                android:text="@string/add"
+                android:textColor="#ffffff"
+                android:textSize="40sp"
+                tools:ignore="RtlHardcoded" />
+
+            <Button
+                android:id="@+id/button_subtract"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="0dp"
+                android:layout_weight="1"
+                android:background="#757575"
+                android:text="@string/subtract"
+                android:textColor="#ffffff"
+                android:textSize="40sp"
+                tools:ignore="RtlHardcoded" />
+
+            <Button
+                android:id="@+id/button_multiply"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="0dp"
+                android:layout_weight="1"
+                android:background="#757575"
+                android:text="@string/multiply"
+                android:textColor="#ffffff"
+                android:textSize="40sp"
+                tools:ignore="RtlHardcoded" />
+
+            <Button
+                android:id="@+id/button_divide"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="0dp"
+                android:layout_weight="1"
+                android:background="#757575"
+                android:text="@string/divide"
+                android:textColor="#ffffff"
+                android:textSize="40sp"
+                tools:ignore="RtlHardcoded" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="0.1"
+            android:background="#dd2600"
+            android:orientation="vertical"></View>
+
+    </LinearLayout>
+
+
+</LinearLayout>
